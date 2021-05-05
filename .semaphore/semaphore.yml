@@ -36,7 +36,6 @@ blocks:
           commands:
             - checkout
             - cache restore
-            - pip install -r requirements.txt
             - pip install nbmake pytest-xdist
             - cache store
             - pytest --nbmake -n=auto ./ipynb
