@@ -1,2 +1,9 @@
-# nbmake-examples
-Example repo showing how to test Jupyter Notebooks with nbmake and Semaphore CI
+# A Semaphore demo CI/CD pipeline using pytest and nbmake
+
+This repo shows how you can automatially test Jupyter Notebooks.
+
+<p align="center">
+  <img src="pipeline.png" width=750>
+  <br/>
+  The pipeline defined in this repo, running for a pull request.
+</p>
