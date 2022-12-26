@@ -1,0 +1,14 @@
+name: Github Python / Jupyter Notebook Example Pipeline
+
+on: [workflow_dispatch]
+
+jobs:
+  test-notebooks:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Run the tests
+      run: | 
+        pip install nbmake pytest-xdist && \
+        pytest --nbmake -n=auto ./ipynb
